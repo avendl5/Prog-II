@@ -5,6 +5,8 @@
 #include "header.h"
 //10
 //8
+//4
+//6
 int main() {
 	int izbor;//8
 	do {
