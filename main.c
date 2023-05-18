@@ -3,11 +3,12 @@
 #include<stdlib.h>
 #include<math.h>
 #include "header.h"
-
+//10
+//8
 int main() {
 	int izbor;//8
 	do {
-		ispis_izbornika(); //8
+		ispis_izbornika(); 
 		printf("Unesite izbor: ");
 		scanf("%d", &izbor);
 		switch (izbor) {
