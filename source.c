@@ -15,7 +15,7 @@ void ispis_izbornika() {
 }
 
 int generiraj_novi_id() {
-	FILE* f = fopen("artikli.txt", "r");
+	FILE* f = fopen("artikli.txt", "r");//16
 	if (f == NULL) {
 		return 1;
 	}
@@ -31,7 +31,7 @@ int generiraj_novi_id() {
 	return max_id + 1;
 }
 
-void dodaj_artikl() {
+void dodaj_artikl() { 
 	FILE* f = fopen("artikli.txt", "a");
 	if (f == NULL) {
 		printf("Ne mogu otvoriti datoteku\n");
