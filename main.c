@@ -7,7 +7,7 @@
 int main() {
 	int izbor;//8
 	do {
-		ispis_izbornika();
+		ispis_izbornika(); //8
 		printf("Unesite izbor: ");
 		scanf("%d", &izbor);
 		switch (izbor) {
