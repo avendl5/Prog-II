@@ -25,8 +25,7 @@ int izbornik() {//8
 	printf("' 3 ' Ispis artikala\n");
 	printf("' 4 ' Trazilica\n");
 	printf("' 5 ' Sortiraj artikle po cijeni\n");
-	/*printf("' 6 ' Brisanje proizvoda\n");*/
-	printf("' 7 ' Izlaz iz programa\n");
+	printf("' 6 ' Izlaz iz programa\n");
 
 	scanf("%d", &opcija);
 	system("cls");
@@ -73,7 +72,7 @@ int izbornik() {//8
 izbornikSrch() {
 	int opcija = 0;
 	ARTIKL* polje = NULL;//10
-	polje = (ARTIKL*)ucitavanjeArtikala();
+	polje = (ARTIKL*)ucitavanjeArtikala();//9
 	printf("Pretrazi po:\n");
 	printf("\t' 1 ' Imenu artikla\n");
 	printf("\t' 2 ' Cijeni\n");
@@ -260,7 +259,7 @@ void subs(ARTIKL* veci, ARTIKL* manji) {
 	*manji = temp;
 }
 
-void subs2(ARTIKL* manji, ARTIKL* veci) {
+void subs2(ARTIKL* manji, ARTIKL* veci) {//12
 	ARTIKL temp = { 0 };
 	temp = *manji;
 	*manji = *veci;
