@@ -1,55 +1,13 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
-#include "header.h"
-//10
-//8
-//4
-//6
+#include <stdio.h>
+#include <stdlib.h>
+#include "Header.h"
+
 int main() {
-	int izbor;//8
-	do {
-		ispis_izbornika(); 
-		printf("Unesite izbor: ");
-		scanf("%d", &izbor);
-		switch (izbor) {
-		case 1:
-			dodaj_artikl();
-			break;
-		case 2:
-			citaj_artikle();
-			break;
-		case 3:
-			ispisi_artikle();
-			break;
-		case 4:
-			pronadi_artikl();
-			break;
-		case 5:
-			printf("Da li ste sigurni kako zelite zavrsiti program (da/ne).\n");
-			char odgovor[4] = { 0 };
-			scanf("%s", odgovor);
-			if (strcmp(odgovor, "da") == 0) {
-				printf("Zavrsetak programa\n");
-				return 0;
-			}
-			else if (strcmp(odgovor, "ne") == 0) {
-				continue;
-			}
-			else {
-				printf("Nepoznata opcija. Ponovno Odaberite\n");
-				continue;
+	int opcija = 1;
 
-			}
-		default:
-			printf("Neispravan izbor\n");
-			break;
-		}
-
-
-	} while (1);
-
+	while (opcija != 101) {
+		opcija = izbornik();
+	}
 	return 0;
 }
-#pragma once
